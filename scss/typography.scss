@@ -1,0 +1,50 @@
+.container{
+  font-size: 1.7rem;
+  font-family: $font-text;
+  color: $font-color;
+}
+@mixin heading {
+  
+  text-transform: capitalize;
+  font-family: $font-cursive;
+  line-height: 1;
+}
+.heading-4{
+  @include heading;
+  font-size: 3rem;
+  letter-spacing: 4px;
+}
+.heading-1{
+  @include heading;
+  font-size: 6rem;
+  letter-spacing: 5px;
+}
+.heading-2{
+  font-size: 5rem;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.heading-3{
+  @include heading;
+  font-size: 4rem;
+  letter-spacing: 1px;
+}
+.heading-5{
+  @include heading;
+  font-size: 2.5rem;
+  letter-spacing: 2.5px;
+}
+.quote{
+  position: relative;
+  
+  &::before{
+    position: absolute;
+    top: -4rem;
+    left: 0;
+    content: "\201e";
+    font-size: 4rem;
+  }
+}

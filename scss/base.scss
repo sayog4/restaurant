@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+  font-size: 62.5%;
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+  @media only screen and (max-width: $bp-small) {
+    font-size: 43.75%;
+  }
+}
+body{
+  overflow-x: hidden;
+  box-sizing: border-box;
+  background: $color-primary;
+  line-height: 1.6;
+}
+ul{
+  list-style: none;
+  display: block;
+}
+li{
+  display: inline-block;
+}
+a{
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+  text-transform: capitalize;
+}
+img{
+  width: 100%;
+  display: block;
+}
